@@ -51,7 +51,7 @@
 
 .policy-modal-header {
   padding: 25px 30px;
-  background: linear-gradient(135deg, #fed136 0%, #fec810 100%);
+  background: #156bc0;
   color: white;
   border-radius: 8px 8px 0 0;
   position: relative;
@@ -64,7 +64,6 @@
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #000000;
 }
 
 .policy-close {
@@ -101,7 +100,7 @@
 }
 
 .policy-modal-body h3 {
-  color: #{{ site.data.template.color.primary | default: "fed136" }
+  color: #{{ site.data.template.color.primary | default: "156bc0" }
 }
 
 ;
@@ -114,7 +113,7 @@ font-family: "Montserrat",
 Helvetica,
 Arial,
 sans-serif;
-border-bottom: 2px solid #{{ site.data.template.color.primary | default: "fed136" }
+border-bottom: 2px solid #{{ site.data.template.color.primary | default: "156bc0" }
 }
 
 ;
@@ -151,7 +150,7 @@ padding-bottom: 8px;
 }
 
 .policy-modal-body a {
-  color: #fed136;
+  color: #156bc0;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -164,7 +163,7 @@ padding-bottom: 8px;
 .policy-effective-date {
   background-color: #f8f9fa;
   padding: 12px 20px;
-  border-left: 4px solid #fed136;
+  border-left: 4px solid #156bc0;
   margin-bottom: 25px;
   font-size: 14px;
 }
@@ -228,7 +227,7 @@ padding-bottom: 8px;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: #{{ site.data.template.color.primary | default: "fed136" }
+  background-color: #{{ site.data.template.color.primary | default: "156bc0" }
 }
 
 ;
@@ -255,7 +254,7 @@ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .policy-modal-body::-webkit-scrollbar-thumb {
-  background: #{{ site.data.template.color.primary | default: "fed136" }
+  background: #{{ site.data.template.color.primary | default: "156bc0" }
 }
 
 ;
