@@ -23,6 +23,14 @@
   // Initialize modal functionality when DOM is ready
   document.addEventListener('DOMContentLoaded', function () {
 
+    // Check URL hash on page load and open corresponding modal
+    var hash = window.location.hash;
+    if (hash === '#privacy-policy') {
+      openModal('privacyPolicyModal');
+    } else if (hash === '#terms-conditions' || hash === '#terms-of-use') {
+      openModal('termsOfUseModal');
+    }
+
     // Get all policy links
     var privacyLinks = document.querySelectorAll('a[href="#privacy-policy"], a[href*="privacy"]');
     var termsLinks = document.querySelectorAll('a[href="#terms-conditions"], a[href="#terms-of-use"], a[href*="terms"]');
@@ -76,6 +84,22 @@
         openModals.forEach(function (modal) {
           closeModal(modal.id);
         });
+      }
+    });
+
+    // Handle hash changes (browser back/forward navigation)
+    window.addEventListener('hashchange', function () {
+      var hash = window.location.hash;
+      
+      // Close all modals first
+      closeModal('privacyPolicyModal');
+      closeModal('termsOfUseModal');
+      
+      // Open corresponding modal based on hash
+      if (hash === '#privacy-policy') {
+        openModal('privacyPolicyModal');
+      } else if (hash === '#terms-conditions' || hash === '#terms-of-use') {
+        openModal('termsOfUseModal');
       }
     });
   });
