@@ -277,7 +277,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: linear-gradient(rgba(0, 32, 96, 0.7), rgba(0, 32, 96, 0.7)),url('/juraganstore//img/header-bg.png');
+    background-image: linear-gradient(rgba(0, 32, 96, 0.7), rgba(0, 32, 96, 0.7)),url('/img/header-bg.png');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -666,7 +666,7 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url('/juraganstore//img/map-image.png');
+    background-image: url('/img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
 }
